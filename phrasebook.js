@@ -64,5 +64,12 @@ var p = {
     'buried',
     'organized',
     'overridden'
+  ],
+
+  hedges: [
+    'with CSS3, you have',
+    'remember,',
+    'you probably didn\'t know this, but',
+    'i still can\'t believe my'
   ]
 };
