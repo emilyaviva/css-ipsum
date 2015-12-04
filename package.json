@@ -1,0 +1,22 @@
+{
+  "name": "css-ipsum",
+  "version": "0.0.1",
+  "description": "A CSS Ipsum generator bot for Twitter",
+  "main": "generator.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emilyaviva/css-ipsum.git"
+  },
+  "author": "Emily Aviva Kapor-Mater",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/emilyaviva/css-ipsum/issues"
+  },
+  "homepage": "https://github.com/emilyaviva/css-ipsum#readme",
+  "dependencies": {
+    "twitter": "^1.2.5"
+  }
+}
