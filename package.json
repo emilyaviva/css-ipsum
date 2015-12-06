@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/emilyaviva/css-ipsum#readme",
   "dependencies": {
+    "express": "^4.13.3",
+    "superagent": "^1.5.0",
     "twitter": "^1.2.5"
   }
 }
