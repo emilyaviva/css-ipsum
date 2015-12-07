@@ -22,8 +22,7 @@ var params = {
 function makeTweet() {
   t.post('statuses/update', {status: generate()}, function(error, tweet, res) {
     if (error) throw error;
-    console.log('Posted tweet: ', tweet);
-    console.log('Response: ', res);
+    console.log('Posted tweet.');
   });
 }
 
@@ -33,7 +32,7 @@ setInterval(function() {
   } catch(e) {
     console.log(e);
   }
-}, 804000);
+}, 600000);
 
 app.listen(port, function() {
   console.log('App now listening on port ' + port + ' in ' + app.get('env') + ' mode...');
