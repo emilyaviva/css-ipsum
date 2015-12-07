@@ -2,7 +2,7 @@ var Twitter = require('twitter');
 var express = require('express');
 var app = express();
 var port = process.env.PORT || 3000;
-var generate = require('lib/generator')
+var generate = require('./lib/generator')
 
 app.get('/', function(req, res) {
   res.send('Congratulations, you sent a GET request!');
@@ -20,7 +20,7 @@ var params = {
 };
 
 function makeTweet() {
-  t.post('statuses/update', {status; generate()}, function(e, tweet, res) {
+  t.post('statuses/update', {status: generate()}, function(error, tweet, res) {
     if (error) throw error;
     console.log('Posted tweet: ', tweet);
     console.log('Response: ', res);
@@ -31,6 +31,6 @@ setInterval(function() {
   try {
     makeTweet();
   } catch(e) {
-    console.error(e);
+    console.log(e);
   }
-}, 900000);
+}, 804000);
