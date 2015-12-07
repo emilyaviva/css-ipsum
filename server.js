@@ -34,3 +34,7 @@ setInterval(function() {
     console.log(e);
   }
 }, 804000);
+
+app.listen(port, function() {
+  console.log('App now listening on port ' + port + ' in ' + app.get('env') + ' mode...');
+});
