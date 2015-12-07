@@ -1,5 +1,6 @@
 var Twitter = require('twitter');
 var express = require('express');
+var http = require('http');
 var app = express();
 var port = process.env.PORT || 3000;
 var generate = require('./lib/generator')
@@ -7,6 +8,15 @@ var generate = require('./lib/generator')
 app.get('/', function(req, res) {
   res.send('Congratulations, you sent a GET request!');
 });
+
+setInterval(function() {
+  try {
+    http.get('http://css-ipsum-bot.herokuapp.com');
+    console.log('GET request sent; kept alive.');
+  } catch(e) {
+    console.log(e);
+  }
+}, 300000);
 
 var t = new Twitter({
   consumer_key: process.env.TWITTER_CONSUMER_KEY,
