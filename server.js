@@ -3,6 +3,7 @@ var express = require('express');
 var http = require('http');
 var app = express();
 var port = process.env.PORT || 3000;
+var interval = process.env.TWITTER_NEW_TWEET_INTERVAL || 809500;
 var generate = require('./lib/generator')
 
 app.get('/', function(req, res) {
@@ -42,7 +43,7 @@ setInterval(function() {
   } catch(e) {
     console.log(e);
   }
-}, 809500);
+}, interval);
 
 app.listen(port, function() {
   console.log('App now listening on port ' + port + ' in ' + app.get('env') + ' mode...');
