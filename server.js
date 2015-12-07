@@ -16,7 +16,7 @@ setInterval(function() {
   } catch(e) {
     console.log(e);
   }
-}, 300000);
+}, 600000);
 
 var t = new Twitter({
   consumer_key: process.env.TWITTER_CONSUMER_KEY,
@@ -42,7 +42,7 @@ setInterval(function() {
   } catch(e) {
     console.log(e);
   }
-}, 600000);
+}, 809500);
 
 app.listen(port, function() {
   console.log('App now listening on port ' + port + ' in ' + app.get('env') + ' mode...');
